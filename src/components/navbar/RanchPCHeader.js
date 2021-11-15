@@ -4,7 +4,7 @@ import './rpcheader.css';
 function RanchPCHeader() {
     return (
         <header>
-            <img src=".././images/try4.jpg" className="banner"  alt="" />
+            <img src=".././images/nav.jpg" className="banner"  alt="" />
             <a href="" className="logo">Ranch PC
                 <span></span>
                 <span></span>
