@@ -1,0 +1,57 @@
+.about {
+    background: #15131a;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+}
+
+.about .row .image {
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.about .row .image img {
+    width: 50%;
+    border-radius: 1rem;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2.5rem;
+}
+
+.about .row .content h3 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.about .row .content p {
+    font-size: 1.8rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.about #rpcTeam {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+                    @media (max-width: 500px) {
+                        .about .row .content h3 {
+                            font-size: 2rem;
+                        }
+                        .about .row .content p {
+                            font-size: 1rem;
+                            padding: 1rem 0;
+                        }
+                        .about #rpcTeam {
+                            font-size: 1.5rem;
+                            margin-top: -50px;
+                        }
+                    }

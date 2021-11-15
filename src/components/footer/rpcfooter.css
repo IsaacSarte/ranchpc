@@ -1,0 +1,82 @@
+footer {
+    background: #222;
+    text-align: center;
+}
+
+footer .share {
+    padding: 0.5rem 0; 
+}
+
+footer .share h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+footer .share a {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 3rem 1rem;
+}
+
+footer .share a:hover {
+    color: #637CBB;
+}
+
+footer .credit {
+    padding: 2rem 1rem;
+    color: #fff;
+    background: #0a0a0a;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer .credit a {
+    color: #637CBB;
+}
+
+                    @media (max-width: 375px) {
+                        footer .credit{
+                            font-size: 0.8rem;
+                            padding: 1rem 1rem;
+                        }
+                    }
+
+.topSec {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 15%;
+}
+
+.pLeft {
+    position: relative;
+    margin-top: 5px;
+    left: -125px;
+}
+
+.si {
+    left: 60px;
+}
+
+.scl a {
+    color: #fff;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.scl a:hover {
+    color: #444;
+}
+
+                    @media (max-width: 375px) {
+                        .topSec {
+                            display: block;
+                        }
+                        .pLeft {
+                            left: 0px;
+                        }
+                        .loginSec {
+                            margin-left: 15px;
+                        }
+                    }

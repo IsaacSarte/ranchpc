@@ -1,0 +1,157 @@
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1.5rem 7%;
+    background: linear-gradient(45deg, #0F0B1C, #020514);
+}
+
+header.sticky {
+    height: 80px;
+}
+
+header .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+    opacity: 0.6;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+header.sticky .banner {
+    opacity: 1.5;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 2.2rem;
+    color: #fff;
+    transform: translate(0%,5%);
+    overflow: hidden;
+    transition: 1s;
+    z-index: 1;
+}
+
+header .logo:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 15px #03e9f4;
+}
+
+.logo span {
+    position: absolute;
+    display: block;
+}
+
+.logo span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1.5s linear infinite;
+}
+
+@keyframes animate1 {
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+.logo span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1.5s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+header .navbar {
+    margin-right: 14%;
+}
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li {
+    font-weight: 500;
+}
+
+header .navbar ul li a {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    color: #fff;
+    position: relative;
+}
+
+header .navbar ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    right: 0;
+    height: .2rem;
+    width: 0%;
+    transition: .2s linear;
+}
+
+header .navbar ul li a.active::before,
+header .navbar ul li a:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+    color: #bfbfbf;
+}
+
+header #menu {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+                    @media (max-width: 375px) {
+                        header {
+                            display: block;
+                        }
+                        header .navbar ul li {
+                            display: inline;
+                            margin-left: -20px;
+                            padding: 1rem;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                        }
+                        header .navbar ul li a {
+                            font-size: 1.3rem;
+                        }
+                    }
