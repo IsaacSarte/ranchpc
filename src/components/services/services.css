@@ -67,7 +67,30 @@
     padding: 1rem 0;
 }
 
+
                     @media (max-width: 500px) {
+                        .heading {
+                            font-size: 2em;
+                            padding-top: 2.5rem;
+                        }
+                        .services .row .image {
+                            display: none;
+                        }
+                        .services .row .box-container {
+                            display: block;
+                        }
+                        .services .row .box-container .box {
+                            width: 14rem;
+                            margin-left: 63px;
+                        }
+                        .services .row .box-container .box h3 {
+                            font-size: 1.5rem;
+                        }
+                        .services .row .box-container .box p {
+                            font-size: 1rem;
+                        }
+                    }
+                    @media (max-width: 375px) {
                         .heading {
                             font-size: 2.5em;
                             padding-top: 2.5rem;

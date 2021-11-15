@@ -41,7 +41,6 @@ body {
 
 .gifs h3 {
   color: #fff;
-  font-size: 3em;
   margin-top: -2rem;
 }
 
@@ -95,6 +94,7 @@ body {
                   @media(max-width: 500px) {
                       .home {
                           padding-top: 25vh;
+                          min-height: 70vh;
                       }
                       .home .homeIMG {
                           width: 100px;
@@ -104,8 +104,8 @@ body {
                           font-size: 1.5em;
                           color: #fff;
                       }
-                      .gifs h3 {
-                          font-size: 1.5em;
+                      .scl {
+                        padding-top: 25vh;
                       }
                       .gifs img {
                           display: block;
