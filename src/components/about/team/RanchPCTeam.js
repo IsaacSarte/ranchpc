@@ -10,7 +10,7 @@ import { motion, useAnimation } from 'framer-motion/dist/es/';
 
 const RanchPCTeam = () => {
     const {ref, inView} = useInView({
-        threshold: 0.25
+        threshold: 0.55
     });
     const animationLeft = useAnimation();
     const animationRight = useAnimation();

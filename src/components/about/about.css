@@ -43,6 +43,9 @@
 }
 
                     @media (max-width: 500px) {
+                        .about {
+                            padding-top: 20vh;
+                        }
                         .about .row .content h3 {
                             font-size: 2rem;
                         }

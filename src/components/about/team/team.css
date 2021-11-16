@@ -101,8 +101,13 @@
 }
 
                     @media (max-width: 500px) {
+                        .rpcTeam {
+                            display: grid;
+                            grid-template-columns: repeat(2, 50%);
+                            place-items: center;
+                        }
                         .rpcTeam .cardTeam {
-                            width: 250px;
+                            width: 160px;
                             height: 300px;
                         }
                         .rpcTeam .cardTeam .conTeam .imgTeam {
@@ -111,9 +116,15 @@
                             border-radius: 50%;
                         }
                         .rpcTeam .cardTeam .conTeam .conTeamBx h3 {
-                            font-size: 20px;
+                            font-size: 15px;
                         }
                         .rpcTeam .cardTeam .conTeam .conTeamBx h3 span {
-                            font-size: 15px;
+                            font-size: 10px;
+                        }
+                    }
+                    @media (max-width: 375px) {
+                        .rpcTeam .cardTeam {
+                            width: 150px;
+                            height: 300px;
                         }
                     }

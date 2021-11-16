@@ -69,6 +69,9 @@
 
 
                     @media (max-width: 500px) {
+                        .services {
+                            padding-top: 20vh;
+                        }
                         .heading {
                             font-size: 2em;
                             padding-top: 2.5rem;
