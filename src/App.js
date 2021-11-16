@@ -13,6 +13,9 @@ import Spinner from 'react-spinkit';
 // Components
 import Main from './components/Main';
 
+// Messenger
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 function App() {
 
   const [user,loading] = useAuthState(auth);
@@ -48,6 +51,11 @@ function App() {
         </>
         )}
       </Router>
+      {/* Messenger API */}
+      <MessengerCustomerChat
+        pageId="102220941569609"
+        appId="925495151698638"
+      />
     </div>
   );
 }
